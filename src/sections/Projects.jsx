@@ -14,8 +14,8 @@ function Projects() {
           url: "LINK_DO_BULLETIN",
         },
         {
-          label: "LinkedIn Post",
-          url: "https://linkedin.com/",
+          label: "LinkedIn Posts",
+          url: "/linkedin-posts",
         },
         {
           label: "Event Coverage",
