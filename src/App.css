@@ -319,3 +319,25 @@ button:hover,
   background-color: #e9e9e9;
   transform: translateY(-2px);
 }
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-link {
+  font-size: 0.8rem;
+  background: #ffe3f1;
+  color: #c2185b;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.project-link:hover {
+  background: #ffd0e6;
+}
