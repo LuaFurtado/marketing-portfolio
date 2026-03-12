@@ -1,11 +1,13 @@
 function Contact() {
   return (
-    <section>
-      <h2>Contact</h2>
+    <section className="section" id="contact">
+      <div className="container">
+        <h2>Contact</h2>
 
-      <p>
-        Let’s build something meaningful together.
-      </p>
+        <p>
+          Let’s build something meaningful together.
+        </p>
+      </div>
     </section>
   )
 }

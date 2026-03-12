@@ -1,11 +1,15 @@
 function Experience() {
   return (
-    <section>
-      <h2>Experience & Certifications</h2>
+    <section className="section" id="experience">
+      <div className="container">
 
-      <p>
-        Relevant experience, certifications, and education will go here.
-      </p>
+        <h2>Experience & Certifications</h2>
+
+        <p>
+          Relevant experience, certifications, and education will go here.
+        </p>
+
+      </div>
     </section>
   )
 }

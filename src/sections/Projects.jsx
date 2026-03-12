@@ -29,7 +29,8 @@ function Projects() {
   ]
 
   return (
-    <section className="section" id="projects">
+  <section className="section" id="projects">
+    <div className="container">
 
       <h2>Projects</h2>
 
@@ -45,8 +46,9 @@ function Projects() {
         ))}
       </div>
 
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
 export default Projects

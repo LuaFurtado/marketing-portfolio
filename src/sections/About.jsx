@@ -1,17 +1,15 @@
 function About() {
   return (
-    <section>
-      <h2>About</h2>
-
-      <p>
-        I’m a digital marketer passionate about storytelling,
-        content strategy, and community engagement.
-      </p>
-
-      <p>
-        My work combines marketing strategy, creative communication,
-        and education-focused initiatives.
-      </p>
+    <section className="section" id="about">
+      <div className="container">
+        <h2>About Me</h2>
+        <p className="section-intro">
+          I’m building a career at the intersection of marketing, storytelling,
+          community, and tech. My work includes content creation, student
+          leadership, event participation, and mission-driven projects that help
+          people connect with useful information and resources.
+        </p>
+      </div>
     </section>
   )
 }
