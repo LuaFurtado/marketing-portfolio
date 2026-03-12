@@ -1,4 +1,4 @@
-function ProjectCard({ title, subtitle, description, tags, links }) {
+function ProjectCard({ title, subtitle, description, tags = [], links = [] }) {
   return (
     <article className="project-card">
       <h3>{title}</h3>
@@ -7,27 +7,31 @@ function ProjectCard({ title, subtitle, description, tags, links }) {
 
       <p className="project-description">{description}</p>
 
-      <div className="tag-list">
-        {tags.map((tag) => (
-          <span className="tag" key={tag}>
-            {tag}
-          </span>
-        ))}
-      </div>
+      {tags.length > 0 && (
+        <div className="tag-list">
+          {tags.map((tag) => (
+            <span className="tag" key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
 
-      <div className="project-links">
-        {links.map((link) => (
-          <a
-            key={link.label}
-            href={link.url}
-            target="_blank"
-            rel="noreferrer"
-            className="project-link"
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
+      {links.length > 0 && (
+        <div className="project-links">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </article>
   )
 }

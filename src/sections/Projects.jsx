@@ -1,4 +1,4 @@
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from "../components/ProjectCard";
 
 function Projects() {
   const projects = [
@@ -7,31 +7,39 @@ function Projects() {
       subtitle: "Event Coverage • Content Creation",
       description:
         "Participated in the HubSpot Academy Learner Correspondent program during INBOUND, creating content and interviews connected to the event community.",
-      tags: ["Content", "Interviews", "Community"],
+
       links: [
         {
+          label: "HubSpot Academy Bulletin — Learner Correspondent Spotlight",
+          url: "LINK_DO_BULLETIN",
+        },
+        {
           label: "LinkedIn Post",
-          url: "https://linkedin.com/"
+          url: "https://linkedin.com/",
         },
         {
           label: "Event Coverage",
-          url: "https://linkedin.com/"
-        }
-      ]
+          url: "https://linkedin.com/",
+        },
+      ],
     },
 
     {
-      title: "HubSpot Micro-Internship — Food Bank Project",
+      title: "HubSpot Micro-Internship — FoodBank Project",
       subtitle: "Content Marketing • Nonprofit",
       description:
-        "Created marketing content and written assets for a nonprofit-focused project.",
-      tags: ["Nonprofit", "Marketing", "Writing"],
+        "Completed the HubSpot Marketing AI Micro-Internship, developing marketing content and campaign materials for a nonprofit food bank initiative.",
+
       links: [
         {
-          label: "View Blog Posts",
-          url: "/files/micro-internship.pdf"
-        }
-      ]
+          label: "Campaign Case Study",
+          url: "https://www.notion.so/Final-Presentation-Marketing-AI-Micro-Internship-Spring-2025-1fa6cda697c780fdb7caf733f6d75ff2",
+        },
+        {
+          label: "HubSpot Certificate",
+          url: "https://app.hubspot.com/academy/achievements/xr1vpnny/en/1/luana-furtado/hubspot-marketing-ai-micro-internship-program",
+        },
+      ],
     },
 
     {
@@ -39,19 +47,19 @@ function Projects() {
       subtitle: "Leadership • Community Engagement",
       description:
         "Supported student engagement and communication initiatives through student leadership and collaborative projects.",
-      tags: ["Leadership", "Community", "Communication"],
+
       links: [
         {
           label: "Calbright Profile",
-          url: "https://calbright.edu/"
+          url: "https://www.calbright.edu/student-life/students/luana/",
         },
         {
-          label: "Certificate",
-          url: "/files/ascc-certificate.pdf"
-        }
-      ]
-    }
-  ]
+          label: "CRM Platform Administration Certificate",
+          url: "/assets/CRMPlatformAdministration.pdf",
+        },
+      ],
+    },
+  ];
 
   return (
     <section className="section" id="projects">
@@ -59,7 +67,8 @@ function Projects() {
         <h2>Projects</h2>
 
         <p className="section-intro">
-          Selected work in content creation, community storytelling, and marketing.
+          Selected work in content creation, community storytelling, and
+          marketing.
         </p>
 
         <div className="projects-grid">
@@ -69,7 +78,7 @@ function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
