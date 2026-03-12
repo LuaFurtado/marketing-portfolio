@@ -415,3 +415,68 @@ button:hover,
   background-color: #ff2a8a;
   transform: translateY(-1px);
 }
+
+/* CONTACT */
+
+.contact-card {
+  max-width: 720px;
+  margin: 2rem auto 0;
+  background: white;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f6d7e6;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(194, 24, 91, 0.12);
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #6f5d68;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #f4cddd;
+  border-radius: 14px;
+  font: inherit;
+  background: white;
+  color: #2d2430;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff4da6;
+  box-shadow: 0 0 0 3px rgba(255, 77, 166, 0.12);
+}
+
+.contact-form button {
+  align-self: center;
+}

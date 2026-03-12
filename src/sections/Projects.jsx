@@ -11,15 +11,15 @@ function Projects() {
       links: [
         {
           label: "HubSpot Academy Bulletin — Learner Correspondent Spotlight",
-          url: "LINK_DO_BULLETIN",
+          url: "https://www.linkedin.com/pulse/hubspot-academy-bulletin-july-august-2025-hubspot-academy-t7kde/?trackingId=C0oRH1TRQvCyd1qjCTcQRw%3D%3D",
         },
         {
           label: "LinkedIn Posts",
           url: "/linkedin-posts",
         },
         {
-          label: "Event Coverage",
-          url: "https://linkedin.com/",
+          label: "HubSpot Academy Interview Video",
+          url: "https://www.linkedin.com/posts/hubspot-academy_what-speed-do-you-use-when-watching-hubspot-activity-7378827749286871041-YN1a?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD01KjEBo21sgx2-c7AVB-86yilRmFAqQ3w",
         },
       ],
     },
