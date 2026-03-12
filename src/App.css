@@ -109,10 +109,11 @@ main {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 button,
-.btn-link {
+.hero-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -123,11 +124,16 @@ button,
   font-size: 0.95rem;
   font-weight: 600;
   transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
 }
 
 button:hover,
-.btn-link:hover {
+.hero-btn:hover {
   transform: translateY(-2px);
+}
+
+.hero-btn {
+  min-width: 150px;
 }
 
 .primary {
@@ -142,10 +148,12 @@ button:hover,
 
 .primary:hover {
   background-color: #e63d96;
+  transform: translateY(-2px);
 }
 
 .secondary:hover {
   background-color: #e9e9e9;
+  transform: translateY(-2px);
 }
 
 /* GENERAL SECTIONS */
@@ -227,6 +235,28 @@ button:hover,
   font-weight: 600;
 }
 
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-link {
+  font-size: 0.8rem;
+  background: #ffe3f1;
+  color: #c2185b;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.project-link:hover {
+  background: #ffd0e6;
+}
+
 /* EXPERIENCE */
 
 .experience-grid {
@@ -251,100 +281,11 @@ button:hover,
   margin-bottom: 0.8rem;
 }
 
-/* CONTACT */
-
-.contact-form {
-  max-width: 720px;
-  display: grid;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #f4cddd;
-  border-radius: 14px;
-  font: inherit;
-  background: white;
-  color: #2d2430;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #ff4da6;
-  box-shadow: 0 0 0 3px rgba(255, 77, 166, 0.12);
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-  .navbar-content {
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  main {
-    padding-top: 120px;
-  }
-
-  .hero {
-    min-height: auto;
-    padding: 4rem 0;
-  }
-
-  .hero h1 {
-    font-size: 2.6rem;
-  }
-
-  .hero h2 {
-    font-size: 1.2rem;
-  }
-}
-
-.primary:hover {
-  background-color: #e63d96;
-  transform: translateY(-2px);
-}
-
-.secondary:hover {
-  background-color: #e9e9e9;
-  transform: translateY(-2px);
-}
-
-.project-links {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.project-link {
-  font-size: 0.8rem;
-  background: #ffe3f1;
-  color: #c2185b;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-
-.project-link:hover {
-  background: #ffd0e6;
-}
+/* LINKEDIN */
 
 .linkedin-layout {
   display: grid;
-  grid-template-columns: 1fr 550px;
+  grid-template-columns: 1fr 420px;
   gap: 2rem;
   margin-top: 2rem;
   align-items: start;
@@ -370,44 +311,21 @@ button:hover,
 
 .linkedin-video-card iframe {
   width: 100%;
-  height: 600px;
-  border: none;
-  display: block;
-}
-
-.linkedin-layout {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 2rem;
-  margin-top: 2rem;
-  align-items: start;
-}
-.linkedin-posts-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.linkedin-video-card iframe {
-  width: 100%;
   height: 570px;
   border: none;
+  display: block;
 }
 
 .resource-link {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 8px 16px;
-
   background-color: #ff4fa3;
   color: white;
-
   border-radius: 999px;
-
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-
   transition: all 0.2s ease;
 }
 
@@ -479,4 +397,44 @@ button:hover,
 
 .contact-form button {
   align-self: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .linkedin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .linkedin-video-card iframe {
+    height: 500px;
+  }
 }
