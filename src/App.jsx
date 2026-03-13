@@ -1,17 +1,19 @@
+import Navbar from './components/Navbar'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import Home from './pages/Home'
-import LinkedInPosts from './pages/LinkedInPosts'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/linkedin-posts" element={<LinkedInPosts />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   )
 }
 
